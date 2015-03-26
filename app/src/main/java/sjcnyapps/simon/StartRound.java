@@ -1,25 +1,26 @@
-package com.example.samanthamiller.simon;
+package sjcnyapps.simon;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * Created by Alex on 3/25/15.
+ * Created by keith_000 on 3/25/2015.
  */
-public class StartRound
-{
-    public void startRound(ArrayList<Integer> sequence)
+public class StartRound {
+
+
+    public static void startRound(ArrayList<Integer> sequence)
     {
         addToSequence(sequence);
     }
 
-    public void addToSequence(ArrayList<Integer> sequence)
+    public static void addToSequence(ArrayList<Integer> sequence)
     {
 
         int i = generateRandom();
     }
 
-    public int generateRandom()
+    public static int generateRandom()
     {
         Random rand = new Random();
         int randomNum = rand.nextInt((4) + 1);
