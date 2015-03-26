@@ -18,6 +18,17 @@ public class StartRound {
     {
 
         int i = generateRandom();
+
+        if ( sequence == null)
+        {
+            sequence = new ArrayList<Integer>();
+            sequence.add(i);
+        }
+        else
+        {
+            sequence.add(i);
+        }
+
     }
 
     public static int generateRandom()

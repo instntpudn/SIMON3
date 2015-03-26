@@ -23,6 +23,7 @@ import java.util.List;
 
 public class MainActivity extends ActionBarActivity {
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 
    static int btnNum = 0;
@@ -31,12 +32,18 @@ public class MainActivity extends ActionBarActivity {
     static List<Integer> SEQUENCE;
 =======
     int btnNum = 0;
+=======
+>>>>>>> Stashed changes
 
+    int btnNum = 0;
 
     ArrayList<Integer> SEQUENCE;
 >>>>>>> origin/master
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
