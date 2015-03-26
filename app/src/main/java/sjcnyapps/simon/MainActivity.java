@@ -1,5 +1,6 @@
 package sjcnyapps.simon;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,11 +12,15 @@ import java.util.List;
 
 public class MainActivity extends ActionBarActivity {
 
+<<<<<<< HEAD
+    int btnNum = 0;
+=======
 
 
 
     ArrayList<Integer> SEQUENCE;
 
+>>>>>>> FETCH_HEAD
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,5 +57,30 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void playSound(int btnNum)
+    {
+        MediaPlayer player1 = MediaPlayer.create(MainActivity.this, R.raw.sounds_01);
+        MediaPlayer player2 = MediaPlayer.create(MainActivity.this, R.raw.sounds_02);
+        MediaPlayer player3 = MediaPlayer.create(MainActivity.this, R.raw.sounds_03);
+        MediaPlayer player4 = MediaPlayer.create(MainActivity.this, R.raw.sounds_04);
+
+        switch (btnNum)
+        {
+            case 1:
+                player1.start();
+                break;
+            case 2:
+                player2.start();
+                break;
+            case 3:
+                player3.start();
+                break;
+            case 4:
+                player4.start();
+                break;
+        }
     }
 }
