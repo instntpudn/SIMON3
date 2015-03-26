@@ -13,9 +13,13 @@ import java.util.List;
 public class MainActivity extends ActionBarActivity {
 
     int btnNum = 0;
+<<<<<<< Updated upstream
 
 
 
+=======
+    Color color = button.color;
+>>>>>>> Stashed changes
 
     ArrayList<Integer> SEQUENCE;
 
@@ -83,8 +87,6 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void flashButton(int btnNum){
-
-        color = button.color;
 
         switch (btnNum)
         {
