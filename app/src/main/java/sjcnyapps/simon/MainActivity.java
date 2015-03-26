@@ -12,15 +12,13 @@ import java.util.List;
 
 public class MainActivity extends ActionBarActivity {
 
-<<<<<<< HEAD
     int btnNum = 0;
-=======
+
 
 
 
     ArrayList<Integer> SEQUENCE;
 
->>>>>>> FETCH_HEAD
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
