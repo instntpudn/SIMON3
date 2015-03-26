@@ -1,9 +1,13 @@
 package sjcnyapps.simon;
 
+import android.content.Intent;
+import android.sax.StartElementListener;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,10 +22,96 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.gameboard);
+
+
+        final Button btn1 = (Button) findViewById(R.id.btn1);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                ButtonPress(1);
+
+            }
+        });
+
+        final Button btn2 = (Button) findViewById(R.id.btn2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                ButtonPress(2);
+
+            }
+        });
+
+        final Button btn3 = (Button) findViewById(R.id.btn3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                ButtonPress(3);
+
+            }
+        });
+
+        final Button btn4 = (Button) findViewById(R.id.btn4);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                ButtonPress(4);
+
+            }
+        });
+
+        final Button restart = (Button) findViewById(R.id.restart);
+        restart.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                Restart();
+
+            }
+        });
+
+        final Button nxtrnd = (Button) findViewById(R.id.nxtrnd);
+        nxtrnd.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                StartRound();
+
+            }
+        });
+
+        final Button highscore = (Button) findViewById(R.id.highscore);
+        highscore.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                HighScore();
+
+            }
+        });
+
+
+
+
+
+
+
+
 
         Intialize();
-        StartRound();
+       StartRound();
 
     }
 
