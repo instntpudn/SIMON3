@@ -3,47 +3,53 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="#ff000000">
 
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="SIMON" android:id="@+id/textView" android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
     <Button
         android:layout_width="190sp"
         android:layout_height="190sp"
         android:id="@+id/btn1"
-        android:layout_marginTop="68dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:background="#ff4bff41" />
+        android:background="#ff4bff41"
+        android:layout_alignTop="@+id/btn2"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="190sp"
         android:layout_height="190sp"
-        android:id="@+id/btn2"
-        android:layout_alignTop="@+id/btn1"
-        android:layout_alignParentEnd="true"
-        android:background="#ffff4b48" />
+        android:id="@+id/btn2" android:background="#ffff4b48"
+        android:layout_above="@+id/btn3"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="190sp"
         android:layout_height="190sp"
         android:id="@+id/btn3"
-        android:layout_below="@+id/btn1"
+        android:background="#fffaff43"
+        android:layout_above="@+id/restart"
         android:layout_alignParentStart="true"
-        android:background="#fffaff43" />
+        android:layout_marginBottom="46dp" />
 
     <Button
         android:layout_width="190sp"
         android:layout_height="190sp"
-        android:id="@+id/btn4"
-        android:layout_alignBottom="@+id/btn3"
-        android:layout_alignStart="@+id/btn2"
-        android:background="#ff49c2ff" />
+        android:id="@+id/btn4" android:background="#ff49c2ff"
+        android:layout_alignTop="@+id/btn3"
+        android:layout_alignStart="@+id/btn1" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RESTART"
         android:id="@+id/restart"
+        android:background="#ff000000"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="39dp" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -51,7 +57,10 @@
         android:text="NEXT ROUND"
         android:id="@+id/nxtrnd"
         android:layout_alignBottom="@+id/restart"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#ff000000"
+        android:textColor="#ffffffff"
+        android:textSize="20dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -59,5 +68,18 @@
         android:text="HIGH SCORE"
         android:id="@+id/highscore"
         android:layout_alignBottom="@+id/nxtrnd"
-        android:layout_alignEnd="@+id/btn4" />
+        android:layout_alignEnd="@+id/btn4"
+        android:background="#ff000000"
+        android:textColor="#ffffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/counter"
+        android:textSize="50dp"
+        android:textColor="#ffffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/btn1" />
 </RelativeLayout>

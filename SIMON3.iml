@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
+=======
+<<<<<<< HEAD
 <module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
 =======
 <<<<<<< HEAD
 <module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
 =======
 <module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+>>>>>>> origin/master
 >>>>>>> origin/master
 >>>>>>> origin/master
   <component name="FacetManager">
@@ -16,6 +20,11 @@
     </facet>
   </component>
 <<<<<<< HEAD
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/build/classes/main" />
+    <output-test url="file://$MODULE_DIR$/build/classes/test" />
+=======
+<<<<<<< HEAD
   <component name="NewModuleRootManager" inherit-compiler-output="true">
 =======
 <<<<<<< HEAD
@@ -24,6 +33,7 @@
     <output-test url="file://$MODULE_DIR$/build/classes/test" />
 =======
   <component name="NewModuleRootManager" inherit-compiler-output="true">
+>>>>>>> origin/master
 >>>>>>> origin/master
 >>>>>>> origin/master
     <exclude-output />
