@@ -30,9 +30,13 @@ public class AsyncSequencePlayer extends AsyncTask<List<Integer>, Integer, Strin
     protected void onPreExecute()
     {
         btn1.setEnabled(false);
+        btn1.setClickable(false);
         btn2.setEnabled(false);
+        btn2.setClickable(false);
         btn3.setEnabled(false);
+        btn3.setClickable(false);
         btn4.setEnabled(false);
+        btn4.setClickable(false);
     }
 
     @Override
@@ -58,16 +62,19 @@ public class AsyncSequencePlayer extends AsyncTask<List<Integer>, Integer, Strin
     @Override
     protected void onProgressUpdate(Integer... btn)
     {
-//        mainActivity.playSound();
-//        mainActivity.flashButton(btn[0]);
+        mainActivity.flashButton(btn[0]);
     }
 
     @Override
     protected void onPostExecute(String args)
     {
         btn1.setEnabled(true);
+        btn1.setClickable(true);
         btn2.setEnabled(true);
+        btn2.setClickable(true);
         btn3.setEnabled(true);
+        btn3.setClickable(true);
         btn4.setEnabled(true);
+        btn4.setClickable(true);
     }
 }
