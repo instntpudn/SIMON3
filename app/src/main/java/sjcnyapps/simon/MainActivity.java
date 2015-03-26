@@ -197,7 +197,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
 <<<<<<< HEAD
-
+*/
 
 
     public static void resetVariables()
@@ -216,8 +216,7 @@ public class MainActivity extends ActionBarActivity {
 
         if (sequenceSize > HighScoreIO.getHighScore())
         {
-            HighScoreIO.writeHighScore(this, sequenceSize)
-
+            HighScoreIO.writeHighScore(this, SEQUENCE);
         }
 
     }
