@@ -1,10 +1,17 @@
 package sjcnyapps.simon;
 
+<<<<<<< HEAD
+import android.content.Intent;
+import android.sax.StartElementListener;
+=======
 import android.media.MediaPlayer;
+>>>>>>> origin/master
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,25 +19,129 @@ import java.util.List;
 
 public class MainActivity extends ActionBarActivity {
 
+<<<<<<< HEAD
 
    static int btnNum = 0;
 
 
     static List<Integer> SEQUENCE;
+=======
+    int btnNum = 0;
+<<<<<<< Updated upstream
+
+
+
+=======
+    Color color = button.color;
+>>>>>>> Stashed changes
+
+    ArrayList<Integer> SEQUENCE;
+>>>>>>> origin/master
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.gameboard);
+
+
+        final Button btn1 = (Button) findViewById(R.id.btn1);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                ButtonPress(1);
+
+            }
+        });
+
+        final Button btn2 = (Button) findViewById(R.id.btn2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                ButtonPress(2);
+
+            }
+        });
+
+        final Button btn3 = (Button) findViewById(R.id.btn3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                ButtonPress(3);
+
+            }
+        });
+
+        final Button btn4 = (Button) findViewById(R.id.btn4);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                ButtonPress(4);
+
+            }
+        });
+
+        final Button restart = (Button) findViewById(R.id.restart);
+        restart.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                Restart();
+
+            }
+        });
+
+        final Button nxtrnd = (Button) findViewById(R.id.nxtrnd);
+        nxtrnd.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                StartRound();
+
+            }
+        });
+
+        final Button highscore = (Button) findViewById(R.id.highscore);
+        highscore.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class );
+                startActivity(intent);
+
+                HighScore();
+
+            }
+        });
+
+
+
+
+
+
+
+
 
         Intialize();
-        StartRound();
+<<<<<<< HEAD
+       StartRound();
+=======
+        StartRound.startRound(SEQUENCE);
+>>>>>>> origin/master
 
     }
 
     private void Intialize() {
         SEQUENCE =  new ArrayList<Integer>();
+
     }
 
     @Override
@@ -56,8 +167,8 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-    public void playSound(int btnNum)
-    {
+    public void playSound(int btnNum){
+
         MediaPlayer player1 = MediaPlayer.create(MainActivity.this, R.raw.sounds_01);
         MediaPlayer player2 = MediaPlayer.create(MainActivity.this, R.raw.sounds_02);
         MediaPlayer player3 = MediaPlayer.create(MainActivity.this, R.raw.sounds_03);
@@ -80,6 +191,7 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
+<<<<<<< HEAD
 
 
 
@@ -96,4 +208,33 @@ public class MainActivity extends ActionBarActivity {
 
 
 
+=======
+    public void flashButton(int btnNum){
+
+        switch (btnNum)
+        {
+            case 1:
+                button.color = #FFFFFF;
+                playSound(1);
+                button.color = color;
+                break;
+            case 2:
+                button.color = #FFFFFF;
+                playSound(2);
+                button.color = color;
+                break;
+            case 3:
+                button.color = #FFFFFF;
+                playSound(3);
+                button.color = color;
+                break;
+            case 4:
+                button.color = #FFFFFF;
+                playSound(4);
+                button.color = color;
+                break;
+        }
+
+    }
+>>>>>>> origin/master
 }
