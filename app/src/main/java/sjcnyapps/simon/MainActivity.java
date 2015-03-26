@@ -208,7 +208,19 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
+    public static void completeRound()
+    {
+        int sequenceSize = SEQUENCE.size();
+        counterText = (TextView)findViewById(R.id.counter);
+        counterText.setText(sequenceSize.toString());
 
+        if (sequenceSize > HighScoreIO.getHighScore())
+        {
+            HighScoreIO.writeHighScore(this, sequenceSize)
+
+        }
+
+    }
 
 
 
