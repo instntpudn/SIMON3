@@ -1,5 +1,6 @@
 package sjcnyapps.simon;
 
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -13,13 +14,7 @@ import java.util.List;
 public class MainActivity extends ActionBarActivity {
 
     int btnNum = 0;
-<<<<<<< Updated upstream
 
-
-
-=======
-    Color color = button.color;
->>>>>>> Stashed changes
 
     ArrayList<Integer> SEQUENCE;
 
@@ -61,7 +56,7 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
+/*
     public void playSound(int btnNum){
 
         MediaPlayer player1 = MediaPlayer.create(MainActivity.this, R.raw.sounds_01);
@@ -112,5 +107,5 @@ public class MainActivity extends ActionBarActivity {
                 break;
         }
 
-    }
+    }*/
 }
