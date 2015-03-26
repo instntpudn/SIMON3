@@ -1,5 +1,7 @@
 package sjcnyapps.simon;
 
+import android.widget.Button;
+
 <<<<<<< HEAD
 import android.graphics.Color;
 =======
