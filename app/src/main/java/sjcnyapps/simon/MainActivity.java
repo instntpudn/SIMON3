@@ -12,13 +12,12 @@ import java.util.List;
 
 public class MainActivity extends ActionBarActivity {
 
-<<<<<<< HEAD
-    int btnNum = 0;
-=======
 
-    List<Integer> SEQUENCE;
+   static int btnNum = 0;
 
->>>>>>> FETCH_HEAD
+
+    static List<Integer> SEQUENCE;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,4 +79,21 @@ public class MainActivity extends ActionBarActivity {
                 break;
         }
     }
+
+
+
+
+    public static void resetVariables()
+    {
+        btnNum = 0;
+        SEQUENCE.clear();
+        StartRound();
+    }
+
+
+
+
+
+
+
 }
