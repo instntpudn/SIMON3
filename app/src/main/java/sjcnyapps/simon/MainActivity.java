@@ -12,7 +12,9 @@ import java.util.List;
 public class MainActivity extends ActionBarActivity {
 
 
-    List<Integer> SEQUENCE;
+
+
+    ArrayList<Integer> SEQUENCE;
 
 
     @Override
@@ -21,12 +23,13 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         Intialize();
-        StartRound();
+        StartRound.startRound(SEQUENCE);
 
     }
 
     private void Intialize() {
         SEQUENCE =  new ArrayList<Integer>();
+
     }
 
     @Override
