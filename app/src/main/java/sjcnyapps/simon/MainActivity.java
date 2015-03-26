@@ -12,13 +12,13 @@ import java.util.List;
 
 public class MainActivity extends ActionBarActivity {
 
-<<<<<<< HEAD
     int btnNum = 0;
-=======
 
-    List<Integer> SEQUENCE;
 
->>>>>>> FETCH_HEAD
+
+
+    ArrayList<Integer> SEQUENCE;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +26,13 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         Intialize();
-        StartRound();
+        StartRound.startRound(SEQUENCE);
 
     }
 
     private void Intialize() {
         SEQUENCE =  new ArrayList<Integer>();
+
     }
 
     @Override
@@ -57,8 +58,8 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
-    public void playSound(int btnNum)
-    {
+    public void playSound(int btnNum){
+
         MediaPlayer player1 = MediaPlayer.create(MainActivity.this, R.raw.sounds_01);
         MediaPlayer player2 = MediaPlayer.create(MainActivity.this, R.raw.sounds_02);
         MediaPlayer player3 = MediaPlayer.create(MainActivity.this, R.raw.sounds_03);
@@ -79,5 +80,35 @@ public class MainActivity extends ActionBarActivity {
                 player4.start();
                 break;
         }
+    }
+
+    public void flashButton(int btnNum){
+
+        color = button.color;
+
+        switch (btnNum)
+        {
+            case 1:
+                button.color = #FFFFFF;
+                playSound(1);
+                button.color = color;
+                break;
+            case 2:
+                button.color = #FFFFFF;
+                playSound(2);
+                button.color = color;
+                break;
+            case 3:
+                button.color = #FFFFFF;
+                playSound(3);
+                button.color = color;
+                break;
+            case 4:
+                button.color = #FFFFFF;
+                playSound(4);
+                button.color = color;
+                break;
+        }
+
     }
 }

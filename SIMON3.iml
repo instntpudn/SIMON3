@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+=======
+<<<<<<< HEAD
 <module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
 =======
 <module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+>>>>>>> origin/master
 >>>>>>> origin/master
   <component name="FacetManager">
     <facet type="java-gradle" name="Java-Gradle">
@@ -12,11 +16,15 @@
     </facet>
   </component>
 <<<<<<< HEAD
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+=======
+<<<<<<< HEAD
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/build/classes/main" />
     <output-test url="file://$MODULE_DIR$/build/classes/test" />
 =======
   <component name="NewModuleRootManager" inherit-compiler-output="true">
+>>>>>>> origin/master
 >>>>>>> origin/master
     <exclude-output />
     <content url="file://$MODULE_DIR$">
